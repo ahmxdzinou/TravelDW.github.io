@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+  }
+body a{
+    color: #fff;
+  }
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bgr.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 35px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+nav.sticky{
+    position: -webkit- sticky;
+    position: sticky;
+    top: 0; 
+  }
+.logo a{
+    font-size: 40px;
+    text-decoration: none;
+  }
+span{
+    color: #f9004d;
+  }
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+  }
+nav ul li a{
+    text-decoration: none;
+    transition: 0.5s;
+  }
+nav ul li a:hover{
+    color: #f9004d;
+  }
+.login{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+.login:hover{
+    color: #f9004d;
+  }
+.btn{
+    background: #000;
+    border-radius: 6px;
+    padding: 9px 25px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 18px;
+  }
+.btn:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+form {
+    width:130%; 
+    margin:50px auto;
+
+}
+h2{
+    color: #fff;
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    padding-left: 16%;
+}
+.Aboutus{
+  padding: 40px;
+}
+.contact{
+  width: 50%;
+  float: left;
+  
+}
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: #ccc;
+  border: none ;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:60%;
+  box-sizing: border-box;
+  
+}
+
+.feedback-input:focus { 
+    border:2px solid #CC4949; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 60%;
+  background: #f9004d;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: 0.5s;
+  margin-top:-4px;
+  font-weight:600;
+}
+[type="submit"]:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.Aboutus .contact p {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 120px;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Rancho', cursive;
+  text-align: left;
+  margin-left: -10%;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="styleregister.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form class="form" action="register.php" method="post" >
+                <span class="title">Sign up</span>
+                <span class="subtitle">Create an account with your email.</span>
+                <div class="form-container">
+                    <input type="text" class="input" name="name" id="name" placeholder="Name">
+                    <input type="text" class="input" name="username" id="username" placeholder="UserName">
+                    <input type="tel" class="input" name="tel" id="tel" placeholder="Tel number">
+                    <input type="email" class="input" name="email" id="email" placeholder="Email">
+                    <input type="password" class="input" name="password" id="password" placeholder="Password">
+                    <input type="password" class="input" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+                </div>
+                <button type="submit" name="submit">Sign up</button>
+            </form>
+            <div class="form-section">
+                <p>Have an account? <a href="http://localhost/devlop/login.php">Log in</a><a href="http://127.0.0.1:3000/home.html">----- RETURN TO HOME PAGE</a> </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

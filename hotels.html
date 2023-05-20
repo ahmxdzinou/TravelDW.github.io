@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="TravelDW" content="ie=edge">
+  <title>Travel DW</title>
+  <link rel="stylesheet" href="stylehotel.css">
+  <link  rel="stylesheet" href="icon/css/all.css">
+  <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <div class="container">
+      <nav class="hidden">
+        <div class="logo">
+          <a href="home.html">Travel<span>DW.</span></a>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="ourtours.html">Our tours</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="http://localhost/devlop/login.php" class="login">Log in</a>
+          <a href="http://localhost/devlop/register.php" class="btn">Register</a>
+        </div>
+      </nav>
+      <div class="filter">
+        <fieldset>
+          <div>
+            <label for="filter">Filter:</label>
+          </div>
+          <div>
+          <form action="/filter-hotels.php">
+  
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="Date">
+  
+            <label for="Destinations">Destinations:</label>
+            <select id="destinations">
+              <option value="All">All</option>
+              <option value="Paris">Paris</option>
+              <option value="London">London</option>
+              <option value="NewYork">New York </option>
+              <option value="Istanbul">Istanbul</option>
+            </select>
+  
+            <div class="range">
+              <label for="prix">Prix:</label>
+              <input type="range" id="prix" name="prix" min="0" max="10000" step="100">
+              <span id="prixValeur"></span>
+            </div>
+  
+            <label for="places">Num de places:</label>
+            <input type="number" id="places" name="places" min="1" max="10">
+  
+            <div class="button">
+              <div class="submit">apply</div>
+            </div>
+          </form></div>
+          
+        </fieldset>
+  
+      </div>
+      <h1>Hotels:</h1>
+    </div>
+    
+    
+    <section class="hotels" id="hotels">
+      <div class="row">
+
+        <div class="column">
+          <div class="card">
+           
+            <img src="img/Fauchon l'Hôtel Paris.webp" alt="Fauchon l'Hôtel Paris">
+            <div class="content">
+              <h3 class="city"><i class="fas fa-map-marker-alt"></i> Paris</h3>
+              <p>Le Fauchon l'Hôtel is located in Paris, a 2-minute walk from Madeleine Metro station and an 8-minute walk from Place de la Concorde.</p>
+              <br>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">€ 644</div><br>
+              <a href="#" class="btn">book now</a>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+           
+            <img src="img/Hotel d'Espagne.webp" alt="Hotel d'Espagne">
+            <div class="content">
+              <h3 class="city"><i class="fas fa-map-marker-alt"></i> Paris</h3>
+              <p>The Hotel d'Espagne welcomes you in the center of Paris, just a 12-minute walk from the Opéra Garnier and the famous shopping districts.</p>
+              <br>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="price">€ 185</div><br>
+              <a href="#" class="btn">book now</a>
+            </div>
+           
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="img/Cactus.webp" alt="Cactus">
+            <div class="content">
+              <h3 class="city"><i class="fas fa-map-marker-alt"></i> Paris</h3>
+              <p>Located just a 10-minute walk from Montparnasse train station and 150 meters from Volontaires metro station.</p><br>
+              <br>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="price">€ 88</div><br>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="img/Hotel Terminus Lyon.webp" alt="Hotel Terminus Lyon">
+            <div class="content">
+              <h3 class="city"><i class="fas fa-map-marker-alt"></i> Paris</h3>
+              <p>Ideally located in the 12th arrondissement, opposite la Gare de Lyon, the Hotel Terminus Lyon is a 10-minute walk from la Place de la Bastille.</p>
+              <br>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="price">€ 127</div><br>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Ambassadors Bloomsbury.webp" alt="Ambassadors Bloomsbury">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> London</h3>
+            <p>Located in trendy Bloomsbury, the Ambassadors Bloomsbury is a 4-star hotel.</p>
+            <br><br><br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 181</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Hotel Edward Paddington.webp" alt="Hotel Edward Paddington">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> London</h3>
+            <p>Located in Westminster, a short walk from Paddington station and Hyde Park, the Hotel Edward Paddington is a 3-star establishment.</p>
+            <br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 194</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Milestone Hotel Kensington.webp" alt="Milestone Hotel Kensington">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> London</h3>
+            <p>Ideally located between Knightsbridge and Kensington in central London, the Milestone Hotel Kensington is a 5-star boutique hotel.</p>
+            <br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">€ 467</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Jumeirah Lowndes Hotel.webp" alt="Jumeirah Lowndes Hotel">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> London</h3>
+            <p>The Jumeirah Lowndes Hotel is a 5-star luxury property located in upscale Belgravia, within walking distance of Harvey Nichols department store and 5 minutes' walk from several tube stations.</p>
+            <br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">€ 834</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Vespia hotel.webp" alt="Vespia hotel">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> Istanbul</h3>
+            <p>Set in Beylikduzu, 2.2 km from Marmara Park Mall, Vepsia Hotel offers accommodation with a restaurant, free private parking, a fitness centre, a bar, a terrace and family rooms.</p>
+            <br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 125</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Lazzoni Hotel.webp" alt="Lazzoni Hotel">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> Istanbul</h3>
+            <p>The Lazzoni Hotel enjoys an excellent location in the Golden Horn estuary. It is located 10 minutes drive from the old city of Istanbul.</p>
+            <br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">€ 170</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Montagna Hera Hotel Taksim.webp" alt="Montagna Hera Hotel Taksim">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> Istanbul</h3>
+            <p>Montagna Hera Hotel Taksim is located in the heart of Taksim district. The property is within walking distance of popular shopping malls and entertainment venues.</p>
+            <br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 86</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Ayasultan Hotel.webp" alt="Ayasultan Hotel">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> Istanbul</h3>
+            <p>Located in the heart of Istanbul's historic Sultanahmet district, this hotel is within walking distance of important landmarks such as Topkapi Palace, Blue Mosque and Basilica Cistern.</p>
+            <br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 237</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/YOTEL Times Square.webp" alt="YOTEL Times Square">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> NewYork</h3>
+            <p>Located less than 1 km from Times Square, YOTEL New York offers free Wi-Fi and spaces for meetings and events.</p>
+            <br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 313</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Hotel Indigo NYC.webp" alt="Hotel Indigo NYC">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> NewYork</h3>
+            <p>Conveniently located in the Wall Street Financial District of New York, Hotel Indigo NYC Financial District, an IHG Hotel is set 400 meters from National September 11 Memorial & Museum.</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 222</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Sheraton Tribeca.webp" alt="Sheraton Tribeca">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> NewYork</h3>
+            <p>The 4-star Sheraton Tribeca New York Hotel is located in the Tribeca neighborhood, across from the trendy shops of SoHo. Modern rooms, a restaurant and a gym.</p>
+            <br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 264</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/Hotel Shocard Broadway.webp" alt="Hotel Shocard Broadway">
+          <div class="content">
+            <h3 class="city"><i class="fas fa-map-marker-alt"></i> NewYork</h3>
+            <p>Located in New York's vibrant Garment District, steps from Times Square, Hotel Shocard Broadway, Times Square is a modern retro-style property.</p>
+            <br>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="price">€ 220</div><br>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+<script src="icon/js/all.js"></script>
+    
+  
+</body>
+</html>
+

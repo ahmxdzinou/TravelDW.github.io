@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="TravelDW" content="ie=edge">
+  <title>Travel DW</title>
+  <link rel="stylesheet" href="stylehome.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="sticky">
+      <div class="logo">
+        <a href="home.html">Travel<span>DW.</span></a>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="ourtours.html">Our tours</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="http://localhost/devlop/login.php" class="login" id="login-btn">Log in</a>
+        <a href="http://localhost/devlop/register.php" class="btn">Register</a>
+      </div>
+    </nav>
+    
+    <div class="form">
+      <h2>FLIGHTS</h2><br>
+      
+      <form action="/search-flights.php" >
+        <label for="depart-from">Leaving From :</label>
+        <input type="text" id="depart-from" name="depart-from" placeholder="leaving from..."><br>
+
+        <label for="arriving-at">Arriving At:</label>
+        <input type="text" id="arriving-at" name="arriving-at" placeholder="arriving at..."><br><br><br>
+
+        <label for="leaving-date">Leaving On:</label>
+        <input type="date" id="leaving-date" name="leaving-date" ><br>
+
+        <label for="returning-date">Returning On:</label>
+        <input type="date" id="returning-date" name="returning-date" ><br>
+
+        <div class="button">
+          <a class="submit">searsh</a>
+        </div>
+        
+      </form>
+    </div>
+    <h4>Welcome to our website <br><div style="color: #f9004d;">TravelDW</div></h4>
+  </div>
+ 
+</body>
+</html>
